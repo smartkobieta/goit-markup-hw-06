@@ -7,8 +7,6 @@
 }
 
 body {
-  min-width: 320px;
-  overflow-y: hidden;
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
   color: #434455;
@@ -35,9 +33,9 @@ img {
 }
 
 .container {
-  padding: 0 16px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
 }
 
 .visually-hidden {
@@ -52,10 +50,33 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+}
+
 /**----------------HEADER--------**/
 
 .header {
-  background-color: var(--main-text-color);
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .header-logo {
@@ -66,53 +87,26 @@ img {
   letter-spacing: 0.03em;
   color: #4d5ae5;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
-.link {
-  text-decoration: none;
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 70px;
-}
-
-.header-mobile {
-  display: flex;
-  justify-content: space-between;
+.mobil-btn-menu {
+  display: none;
 }
 
 .menu-toggle {
   min-height: 22px;
   min-width: 32px;
-
   margin: 0;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
-  border-radius: 50%;
   outline: none;
-}
-
-.list {
-  list-style-type: none;
 }
 
 .header-logo span {
   color: #2e2f42;
-}
-
-@media (min-width: 768px) {
-}
-
-.header-navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-grow: 1;
 }
 
 .header-menu {
@@ -286,7 +280,6 @@ img {
 .advantages-container-icon {
   background: #f4f4fd;
   border-radius: 4px;
-  width: 264px;
   height: 112px;
   margin-bottom: 8px;
   display: flex;
@@ -300,7 +293,7 @@ img {
 }
 
 .result-menu-item {
-  width: calc((100%-48px) / 3);
+  width: calc((100% - 48px) / 3);
 }
 
 .posada {
@@ -671,6 +664,7 @@ img {
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition);
   width: 408px;
+  width: calc(100% - 36px);
   min-height: 584px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
