@@ -5,7 +5,41 @@
   .header-menu {
     display: none;
   }
+  .header-logo {
+    display: flex;
+    justify-content: center;
+  }
+
   .header-adr {
+    display: none;
+  }
+  .advantages-container-icon {
+    display: none;
+  }
+
+  .advantages-menu {
+    flex-wrap: wrap;
+  }
+  .result {
+    display: none;
+  }
+  .hero-advantages {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    min-width: 396px;
+  }
+  .team {
+    width: 264px;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+  .mobile-menu {
     display: none;
   }
 }

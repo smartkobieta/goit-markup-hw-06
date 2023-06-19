@@ -30,24 +30,30 @@
     <!---------------------the head of the site------------------>
 
     <header class="header">
-      <div class="container header-container">
+      <div class="container">
+       
         <nav class="header-navigation">
-          <a href="./index.html" class="header-logo link"
-            >WEB<span>Studio</span></a>
-            <button
-              class="menu-toggle js-open-menu"
-              aria-expanded="false"
-              aria-controls="mobile-menu">
-              <svg width="32" height="22">
-                <use href="./images/icons.svg#icon-menu-hamburger"></use>
-                <path
-                  fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </button>
-             <ul class="header-menu list">
+            <a href="./index.html" class="header-logo link"
+            >WEB<span>Studio</span></a
+          >
+
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="32" height="22">
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+      
+
+          <ul class="header-menu list">
             <li class="header-menu-item">
               <a class="header-menu-link current link" href="./index.html"
                 >Studio</a
@@ -79,15 +85,14 @@
             </li>
           </ul>
         </address>
-       </div>
-
+        
+    </div>
     </header>
 
-
-
-    <!--the main part of the site-->
     <main>
-      <!-----------------------SECTION HERO-TITLO-------------------
+
+      
+      <!-----------------------SECTION HERO-TITLO------------------>
 
       <section class="hero">
         <div class="container container-titlo">
@@ -97,8 +102,9 @@
           </button>
         </div>
       </section>
-      -----------ADVANTAGES--------------------------------------
-      <section class="advantages">
+
+      <!-----------ADVANTAGES-------------------------------------->
+      <section class="advantages komment">
         <div class="container">
           <h2 class="visually-hidden">Advantages</h2>
           <ul class="advantages-menu list">
@@ -155,8 +161,8 @@
         </div>
       </section>
 
-      -----------WHAT ARE WE DOING----------------------------------------
-      <section class="result">
+      <!-----------WHAT ARE WE DOING---------------------->
+      <section class="result komment">
         <div class="container">
           <h2 class="hero-result">What are we doing</h2>
           <ul class="result-menu list">
@@ -188,8 +194,8 @@
         </div>
       </section>
 
-      --------------OUR TEAM---------------------------------
-      <section class="team-section">
+      <!--------------OUR TEAM--------------------------------->
+      <section class="team-section komment">
         <div class="container team">
           <h2 class="hero-result our-team">Our Team</h2>
           <ul class="team-menu list">
@@ -457,8 +463,8 @@
         </div>
       </section>
 
-      ---------CUSTOMERS-------------------
-      <section class="container-customers">
+      <!---------CUSTOMERS------------------->
+      <section class="container-customers komment">
         <div class="container customers">
           <h2 class="header-customers">Customers</h2>
           <ul class="customers-menu list">
@@ -545,8 +551,8 @@
       </section>
     </main>
 
-    --------------footer part--------------------
-    <footer class="footer-bgr">
+    <!--------------footer part-------------------->
+    <footer class="footer-bgr komment">
       <div class="container container-footer">
         <div class="footer-cont">
           <a class="footer link" href="./index.html"
@@ -612,7 +618,7 @@
           </ul>
         </div>
 
-        -------SUBSCRIBE-----------------------------
+        <!-------SUBSCRIBE----------------------------->
         <div class="subscribe">
           <p class="paragraf-social">Subscribe</p>
           <form class="form-subscribe">
@@ -634,7 +640,7 @@
       </div>
     </footer>
 
-    --------------MODAL-------------------------------
+    <!--------------MODAL------------------------------->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -650,7 +656,7 @@
           autocomplete="off"
           novalidate
         >
-          ------NAME-------------------------
+          <!------NAME------------------------->
           <div class="container-form-modal">
             <label class="label-modal" for="user-name">Name</label>
             <div class="container-input-icon">
@@ -666,7 +672,7 @@
             </div>
           </div>
 
-          ------PHONE-------------------------------
+          <!------PHONE------------------------------->
 
           <div class="container-form-modal">
             <label class="label-modal" for="phone">Phone</label>
@@ -684,7 +690,7 @@
             </div>
           </div>
 
-          ------EMAIL----------------------------
+          <!------EMAIL---------------------------->
           <div class="container-form-modal">
             <label class="label-modal" for="email">Email</label>
             <div class="container-input-icon">
@@ -701,7 +707,7 @@
             </div>
           </div>
 
-          ----------COMMENT----------------------------
+          <!----------COMMENT---------------------------->
           <div class="container-comment-modal">
             <label class="label-modal" for="user-comment">Comment</label>
             <textarea
@@ -716,7 +722,7 @@ Text input</textarea
             >
           </div>
 
-          ------------CHECKBOX--------------------------------
+          <!------------CHECKBOX-------------------------------->
           <div class="container-checkbox-label">
             <input
               class="input-checkbox-label visually-hidden"
@@ -745,7 +751,82 @@ Text input</textarea
       </div>
     </div>
 
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a class="link .mobile-menu-link" href="./index.html">Studio</a>
+        </li>
+        <li><a class="link .mobile-menu-link" href="./portfolio.html">Portfolio</a></li>
+
+        <li><a class="link .mobile-menu-link" href="">Contacts</a></li>
+
+         <li><a class="link .mobile-menu-tel" href="tel:+110001111111">+11 (000) 111-11-11</a
+              ></li>  
+        <li><a class="link .mobile-menu-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></a></li>
+           
+      </ul>
+
+       <ul class="mobile-menu hero-soc">
+        <li><a
+                      class="header-soc-link mobile-soc-ikon link"
+                      href=""
+                      aria-label="instagram"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><svg class="header-soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a></li>
+        <li><a
+                      class="header-soc-link link"
+                      href=""
+                      aria-label="twitter"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg class="header-soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a></li>
+        <li><a
+                      class="header-soc-link link"
+                      href=""
+                      aria-label="facebook"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><svg class="header-soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a></li>
+        <li><a
+                      class="header-soc-link link"
+                      href=""
+                      aria-label="linkedln"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><svg class="header-soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a></li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
-    <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
