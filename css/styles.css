@@ -256,17 +256,13 @@ img {
 /*?----------------ADVANTAGES----------?*/
 
 .advantages {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .advantages-menu {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
-}
-.advantages-menu-item {
-  padding-left: 0;
-  width: calc((100% - 72px) / 4);
 }
 
 .advantages-menu-item::before {
@@ -347,8 +343,6 @@ img {
 }
 .team {
   background-color: var(--team-text-color);
-  padding-bottom: 32px;
-  padding-top: 32px;
   flex-wrap: wrap;
 }
 
@@ -431,11 +425,6 @@ img {
 .footer-bgr {
   background: #2e2f42;
   padding: 100px 0;
-}
-
-.container-footer {
-  display: flex;
-  align-items: baseline;
 }
 
 .footer-cont {
@@ -643,7 +632,7 @@ img {
 /**--------------------------------------------**/
 
 .backdrop {
-  width: 100%;
+  width: 408px;
   height: 100%;
   position: fixed;
   top: 0;
@@ -975,4 +964,9 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-bottom: 40px;
+}
+
+.mobile-contakt {
+  padding: 0 237px 284px 40px;
 }

@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .mobil-btn-menu {
     display: block;
   }
@@ -8,6 +8,9 @@
   .header-logo {
     display: flex;
     justify-content: center;
+  }
+  .komment {
+    display: none;
   }
 
   .header-adr {
@@ -23,7 +26,7 @@
   .result {
     display: none;
   }
-  .hero-advantages {
+  .adwantages-paragraf {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -33,6 +36,51 @@
   .team {
     width: 264px;
   }
+
+  .hero {
+    background: #2e2f42;
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/dark-bg-mob.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 428px;
+    margin: 0 auto;
+  }
+  .hero-titlo {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    max-width: 320px;
+  }
+
+  .customers-menu-item {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    width: 190px;
+    height: 88px;
+  }
+
+  .team-menu-item {
+    width: 264px;
+  }
+
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -41,5 +89,28 @@
   }
   .mobile-menu {
     display: none;
+  }
+
+  .advantages-menu-item {
+    padding-left: 0;
+    width: calc((100% - 72px) / 4);
+  }
+
+  .advantages {
+    padding: 120px 0;
+  }
+
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .container-footer {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .subscribe {
+    padding-left: 80px;
   }
 }
