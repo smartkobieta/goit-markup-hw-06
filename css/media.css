@@ -1,4 +1,4 @@
-@media (max-width: 767px) {
+@media (max-device-width: 767px) {
   .mobil-btn-menu {
     display: block;
   }
@@ -6,8 +6,7 @@
     display: none;
   }
   .header-logo {
-    display: flex;
-    justify-content: center;
+    padding-left: 16px;
   }
   .komment {
     display: none;
@@ -84,6 +83,29 @@
 }
 
 @media (min-width: 768px) {
+  .hero {
+    background: #2e2f42;
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/dark-bg-table.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
   .menu-toggle {
     display: none;
   }
@@ -112,5 +134,9 @@
 
   .subscribe {
     padding-left: 80px;
+  }
+
+  .header-logo {
+    margin-right: 76px;
   }
 }

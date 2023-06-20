@@ -91,7 +91,6 @@ img {
   letter-spacing: 0.03em;
   color: #4d5ae5;
   text-transform: uppercase;
-  margin-right: 76px;
 }
 
 .mobil-btn-menu {
@@ -183,7 +182,6 @@ img {
     url(../images/people-office.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -341,9 +339,12 @@ img {
 .text-footer {
   color: #f4f4fd;
 }
+
 .team {
   background-color: var(--team-text-color);
   flex-wrap: wrap;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .team-menu {
@@ -909,6 +910,7 @@ img {
   border: none;
   border-radius: 50%;
   outline: none;
+  padding-right: 16px;
 }
 
 .mobile-menu-tel {
