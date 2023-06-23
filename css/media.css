@@ -1,7 +1,41 @@
+@media screen and (max-width: 526px) {
+  .adwantages-paragraf {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+  }
+  .backdrop {
+    width: 320px;
+  }
+}
+
+@media (min-width: 527px) and (max-width: 767px) {
+  .adwantages-paragraf {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+  }
+  .advantages-menu {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .advantages-menu-item {
+    padding-left: 0;
+    width: calc((100% - 24px) / 2);
+  }
+}
+
 @media (max-device-width: 767px) {
+  .container {
+    min-width: 320px;
+    max-width: 428px;
+  }
   .mobil-btn-menu {
     display: block;
   }
+
   .header-menu {
     display: none;
   }
@@ -25,13 +59,7 @@
   .result {
     display: none;
   }
-  .adwantages-paragraf {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    min-width: 396px;
-  }
+
   .team {
     width: 264px;
   }
@@ -53,16 +81,13 @@
   .hero-titlo {
     font-weight: 700;
     font-size: 36px;
-    line-height: 40px;
-    max-width: 320px;
   }
 
   .customers-menu-item {
     display: flex;
     gap: 16px;
-    flex-wrap: wrap;
-    width: 190px;
     height: 88px;
+    width: calc((100% - 16px) / 2);
   }
 
   .team-menu-item {
@@ -82,7 +107,11 @@
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
   .hero {
     background: #2e2f42;
     padding: 188px 0;
@@ -105,7 +134,13 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .menu-toggle {
     display: none;
   }
