@@ -13,6 +13,13 @@
         url(../images/Dark-mobile-2x.jpg);
     }
   }
+  .hero-titlo {
+    font-size: 36px;
+    max-width: 320px;
+  }
+  .subscribe-input {
+    width: 398px;
+  }
 }
 
 @media screen and (max-width: 1158px) {
@@ -22,8 +29,6 @@
   .result {
     display: none;
   }
-}
-@media (max-width: 767px) {
 }
 
 @media screen and (min-width: 768px) {
@@ -85,21 +90,49 @@
         url(../images/Dark-bg-2x.jpg);
     }
   }
-  /*mob-menu-toggle {
-    display: none;
+  .container-footer {
+    gap: 72px 24px;
   }
-  /*.mobil-btn-menu {
-    display: block;
+
+  .hero-titlo {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+  .subscribe-input {
+    width: 264px;
+  }
+  .footer-cont {
+    text-align: left;
+  }
+  .paragraf-social {
+    text-align: left;
   }
   .header-menu {
+    display: flex;
+    gap: 40px;
+    max-width: 261px;
+  }
+  .mob-menu-toggle {
     display: none;
   }
-  .header-logo {
-    padding-left: 16px;
-  }
-  .header-adr {
+  .mobile-menu-container {
     display: none;
-  }*/
+  }
+  .form-subscribe {
+    gap: 24px;
+  }
+  .form-subscribe {
+    padding-right: 40px;
+  }
+  .header .container {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -154,18 +187,11 @@
   .footer-bgr {
     padding: 100px 0;
   }
-  .footer-cont {
-    text-align: left;
-  }
-  .paragraf-social {
-    text-align: left;
-  }
+
   .subscribe-button {
     margin-left: 24px;
   }
-  .subscribe-input {
-    width: 264px;
-  }
+
   .hero {
     padding: 188px 0;
     background-image: linear-gradient(
@@ -190,5 +216,13 @@
         ),
         url(../images/people-office-2x.jpg);
     }
+  }
+  .hero-titlo {
+    color: #ffffff;
+    margin-bottom: 48px;
+  }
+  .form-subscribe {
+    display: flex;
+    gap: 24px;
   }
 }

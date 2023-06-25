@@ -35,7 +35,7 @@ img {
 }
 
 .container {
-
+  max-width: 428px;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -63,6 +63,14 @@ img {
   list-style-type: none;
 }
 /**----------------HEADER--------**/
+.header .container {
+ min-height: 70px;
+display: flex;
+justify-content: space-between;
+
+   
+
+}
 
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -70,12 +78,12 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.header .container {
+/*.header .container {
   min-height: 80px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-}
+}*/
 
 .header-navigation {
   display: flex;
@@ -99,9 +107,7 @@ img {
 }
 
 .header-menu {
-  display: flex;
-  gap: 40px;
-  max-width: 261px;
+  display: none;
 }
 .header-menu .header-menu-link {
   font-weight: 500;
@@ -165,7 +171,7 @@ img {
 
 .hero {
   background: #2e2f42;
-  padding: 188px 0;
+  padding: 112px 0;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -174,20 +180,20 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .hero-titlo {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 32px;
+  line-height: 1.11;
   color: #ffffff;
   text-align: center;
   letter-spacing: 0.02em;
-  max-width: 496px;
+  max-width: 300px;
   margin: auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 
 .hero-btn {
@@ -669,11 +675,6 @@ img {
   overflow: hidden;
 }
 
- .subscribe-portfolio-margin {
-     margin-right: 24px;
-     width: 264px;
-  }
-
 /**------------------MODAL--------------------------**/
 
 .backdrop {
@@ -900,22 +901,19 @@ img {
 }
 
 .subscribe-input {
-  width: 100%;
+  width: 264px;
   height: 40px;
   border: 1px solid #ffffff;
   background-color: transparent;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  padding-left: 8px 16px;
+  padding-left: 16px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: var(--main-text-color);
-  margin-bottom: 16px;
-  position: relative;
-  outline: transparent;
-}
 
+}
 .subscribe-input::placeholder {
   color: var(--main-text-color);
 }
@@ -938,6 +936,7 @@ img {
   border-radius: 4px;
 }
 
+
 .subscribe-icon {
   margin-left: 16px;
 }
@@ -952,14 +951,13 @@ img {
 
 /*?-----------MOBILE------------------?*/
 
-/*.mob-menu-toggle {
+.mob-menu-toggle {
+  display: block;
+  margin-left: auto;
   min-height: 22px;
   min-width: 32px;
-  display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
-  padding: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -967,7 +965,7 @@ img {
   outline: none;
 }
 
-.mob-menu-toggle .mobile-menu-container {
+/*.mob-menu-toggle .mobile-menu-container {
   padding-right: 16px;
   position: absolute;
   top: 24px;
