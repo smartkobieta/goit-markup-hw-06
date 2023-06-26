@@ -27,25 +27,28 @@
   </head>
 
   <body>
-
-
-
- <header class="header">
+    <header class="header">
       <div class="container">
         <nav class="header-navigation">
           <a href="./index.html" class="header-logo link"
-            >WEB<span>Studio</span></a>
-            <button class="mobile-menu-open js-open-menu"  
+            >WEB<span>Studio</span></a
+          >
+
+          <button
+            class="mobile-menu-open js-open-menu"
             aria-expanded="false"
-            aria-controls="mobile-menu">
-             <svg width="32" height="22">
-              <use href="./images/icons.svg#icon-menu-hamburger"></use><path
+            aria-controls="mobile-menu"
+          >
+            <svg width="32" height="22">
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+              <path
                 fill-rule="evenodd"
                 d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
                 clip-rule="evenodd"
               ></path>
-            </svg></button>
-        <div>
+            </svg>
+          </button>
+
           <ul class="header-menu list">
             <li class="header-menu-item">
               <a class="header-menu-link current link" href="./index.html"
@@ -61,7 +64,6 @@
               <a class="header-menu-link link" href="">Contacts</a>
             </li>
           </ul>
-          </div>
         </nav>
 
         <!--------------------ADRESS------------------------------>
@@ -80,73 +82,102 @@
           </ul>
         </address>
       </div>
-       <!---------MOBILE-MENU---------------------------->
-     <div class="mobile-menu-container js-menu-container" id="mobile-menu">
-      <button class="close-menu-toggle js-close-menu">
-        <svg width="8" height="8">
+
+      <!---------MOBILE-MENU---------------------------->
+      <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+        <div class="mobile-menu-studio">
+          <button class="mobile-menu-close js-close-menu">
+            <svg width="8" height="8">
               <use href="./images/icons.svg#icon-close-black"></use>
-    
-        </svg>
-      </button>
+            </svg>
+          </button>
 
-      <ul class="mobile-menu">
-    
-        <li><a class="link mobile-menu-link" href="./index.html">Studio</a>
-        </li>
-        <li><a class="link mobile-menu-link" href="./portfolio.html">Portfolio</a></li>
+          <ul class="mobile-menu list">
+            <li class="mobile-menu-item">
+              <a class="link mobile-menu-link mob-current" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="link mobile-menu-link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
 
-        <li><a class="link mobile-menu-link" href="">Contacts</a></li>
+            <li class="mobile-menu-item">
+              <a class="link mobile-menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="mobile-menu mobile-menu-contakt list">
+          <li>
+            <a
+              class="mobile-menu-tel mobile-contakt link"
+              href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a
+              class="mobile-menu-mail mobile-contakt link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
 
-         <li><a class="link mobile-menu-tel" href="tel:+110001111111">+11 (000) 111-11-11</a
-              ></li>  
-        <li><a class="link mobile-menu-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></a></li>
-           
-      </ul>
-
-       <ul class="mobile-menu hero-soc-mobile">
-        <li><a
-                      class="header-soc-link mobile-soc-ikon link"
-                      href=""
-                      aria-label="instagram"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      ><svg class="header-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a></li>
-        <li><a
-                      class="header-soc-link link"
-                      href=""
-                      aria-label="twitter"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <svg class="header-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a></li>
-        <li><a
-                      class="header-soc-link link"
-                      href=""
-                      aria-label="facebook"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      ><svg class="header-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a></li>
-        <li><a
-                      class="header-soc-link link"
-                      href=""
-                      aria-label="linkedln"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      ><svg class="header-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a></li>
-      </ul>
-    </div>
+        <ul class="mobile-menu mobile-soc list hero-soc-mobile">
+          <li>
+            <a
+              class="header-soc-link mobile-soc-ikon link"
+              href=""
+              aria-label="instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="header-soc-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="header-soc-link link"
+              href=""
+              aria-label="twitter"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="header-soc-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="header-soc-link link"
+              href=""
+              aria-label="facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="header-soc-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="header-soc-link link"
+              href=""
+              aria-label="linkedln"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="header-soc-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main>
@@ -227,7 +258,7 @@
           <ul class="result-menu list">
             <li class="result-menu-item">
               <img
-                srcset="./images/img1.jpg, ./images/img1-2x.jpg"
+                srcset="./images/img1-2x.jpg"
                 src="./images/img1.jpg"
                 alt="working with a computer"
                 width="360"
@@ -236,6 +267,7 @@
             </li>
             <li class="result-menu-item">
               <img
+                srcset="./images/img2-2x.jpg"
                 src="./images/img2.jpg"
                 alt="working on the phone"
                 width="360"
@@ -244,6 +276,7 @@
             </li>
             <li class="result-menu-item">
               <img
+                srcset="./images/img3-2x.jpg"
                 src="./images/img3.jpg"
                 alt="work with phone and computer"
                 width="360"
@@ -261,6 +294,7 @@
           <ul class="team-menu list">
             <li class="team-menu-item">
               <img
+                srcset="./images/mark-2x.jpg"
                 src="./images/imgfoto.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -327,6 +361,7 @@
             </li>
             <li class="team-menu-item">
               <img
+                srcset="./images/tom-2x.jpg"
                 src="./images/imgtom.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -392,6 +427,7 @@
             </li>
             <li class="team-menu-item">
               <img
+                srcset="./images/camila-2x.jpg"
                 src="./images/imgcamila.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -456,6 +492,7 @@
             </li>
             <li class="team-menu-item">
               <img
+                srcset="./images/daniel-2x.jpg"
                 src="./images/imgdaniel.jpg"
                 alt="Daniel Wilson"
                 width="264"

@@ -20,9 +20,25 @@
   .subscribe-input {
     width: 398px;
   }
+  .mobile-menu-tel {
+    font-size: 36px;
+  }
 }
 
-@media screen and (max-width: 1158px) {
+@media screen and (min-width: 220px) and (max-width: 767px) {
+  .header .container {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: 100%;
+  }
+  .container {
+    padding-right: 5px;
+  }
+}
+
+@media screen and (max-width: 1157px) {
   .advant-soc-icon {
     display: none;
   }
@@ -30,7 +46,7 @@
     display: none;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1158px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .header-adr {
     display: flex;
     gap: 12px;
@@ -38,7 +54,7 @@
     flex-direction: column;
   }
   .header-logo {
-    margin-right: 120px;
+    margin-right: 76px;
   }
 }
 
