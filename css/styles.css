@@ -552,7 +552,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 96px 0 120px 0;
+  padding: 48px 0 48px 0;
 }
 
 .portfolio-pictures {
@@ -604,7 +604,7 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-menu {
+/*.portfolio-menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -612,9 +612,9 @@ img {
   row-gap: 48px;
   justify-content: center;
 }
-
+*/
 .foto-item {
-  width: 100%;
+  width: 300px;
 }
 
 .portfolio-menu-link {
@@ -1024,7 +1024,7 @@ img {
   letter-spacing: 0.02em;
 }
 
-.mob-current::after {
+/*.mob-current::after {
   content: "";
   position: absolute;
   left: 0;
@@ -1033,7 +1033,7 @@ img {
   background-color: #404bbf;
   border-radius: 2px;
   width: 100%;
-}
+}*/
 
 .mobile-menu-link.mob-current {
   color: #404bbf;

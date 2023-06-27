@@ -23,6 +23,9 @@
   .mobile-menu-tel {
     font-size: 36px;
   }
+  .foto-item {
+    width: 396px;
+  }
 }
 
 @media screen and (min-width: 220px) and (max-width: 767px) {
@@ -33,21 +36,28 @@
     justify-content: flex-end;
     max-width: 100%;
   }
-  .container {
+  .header .container {
     padding-right: 5px;
-  }
-  .section-portfolio {
-    padding: 48px;
-    width: 100%;
   }
   .portfolio-button {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px 24px;
+    justify-content: flex-start;
   }
   .menu-baton {
     width: calc((100% - 48px) / 3);
     height: 96px;
     max-width: 263px;
+  }
+  .portfolio-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    row-gap: 48px;
+    justify-content: center;
+    max-width: 100%;
   }
 }
 
@@ -230,10 +240,8 @@
   .portfolio-menu {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     column-gap: 24px;
     row-gap: 48px;
-    justify-content: center;
   }
 
   .foto-item {
@@ -247,6 +255,12 @@
   }
   .button-text {
     padding: 12px 24px;
+  }
+  .section-portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 0 96px 0;
   }
 }
 
@@ -362,5 +376,8 @@
 
   .foto-item {
     width: calc((100% - 48px) / 3);
+  }
+  .section-portfolio {
+    padding: 96px 0 120px 0;
   }
 }
