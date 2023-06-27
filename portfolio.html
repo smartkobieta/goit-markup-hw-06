@@ -23,6 +23,7 @@
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
 
   <body>
@@ -34,6 +35,21 @@
           <a href="./index.html" class="header-logo link"
             >WEB<span class="studio">Studio</span></a
           >
+          <button
+            class="mobile-menu-open js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="32" height="22">
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+
           <ul class="header-menu list">
             <li class="header-menu-item">
               <a class="header-menu-link link" href="./index.html">Studio</a>
@@ -63,6 +79,101 @@
             </li>
           </ul>
         </address>
+      </div>
+      <!---------MOBILE-MENU---------------------------->
+      <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+        <div class="mobile-menu-studio">
+          <button class="mobile-menu-close js-close-menu">
+            <svg width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu list">
+            <li class="mobile-menu-item">
+              <a class="link mobile-menu-link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a
+                class="link mobile-menu-link mob-current"
+                href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+
+            <li class="mobile-menu-item">
+              <a class="link mobile-menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="mobile-menu mobile-menu-contakt list">
+          <li>
+            <a
+              class="mobile-menu-tel mobile-contakt link"
+              href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a
+              class="mobile-menu-mail mobile-contakt link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-menu mobile-soc list hero-soc-mobile">
+          <li>
+            <a
+              class="header-soc-link mobile-soc-ikon link"
+              href=""
+              aria-label="instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="header-soc-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="header-soc-link link"
+              href=""
+              aria-label="twitter"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="header-soc-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="header-soc-link link"
+              href=""
+              aria-label="facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="header-soc-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="header-soc-link link"
+              href=""
+              aria-label="linkedln"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="header-soc-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -94,12 +205,33 @@
             <li class="foto-item">
               <a href="" class="portfolio-menu-link link">
                 <div class="portfolio-block">
-                  <img
-                    src="./images/portfolio/imgbankapp.jpg"
-                    alt="Banking App Interface Concept"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/img-1.jpg 1x, ./images/img-1-2x.jpg 2x"
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-1-tab.jpg    1x,
+                        ./images/img-1-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-1-mob.jpg    1x,
+                        ./images/img-1-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/imgbankapp.jpg"
+                      alt="Banking App Interface Concept"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
+
                   <p class="portfolio-block-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -374,5 +506,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
